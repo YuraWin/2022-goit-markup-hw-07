@@ -84,7 +84,7 @@ p {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo-web {
+.logo__web {
   color: var(--accent-color);
 }
 
@@ -235,11 +235,11 @@ p {
   display: flex;
 }
 
-.social-links > .item + .item {
+.social-links__item + .social-links__item {
   margin-left: 10px;
 }
 
-.social-links .link {
+.social-links__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,12 +257,12 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear;
 }
-.social-links .icon {
+.social-links__icon {
   width: 20px;
   height: 20px;
 }
-.social-links .link:hover,
-.social-links .link:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   background-color: var(--accent-color);
 
   /* *** */
