@@ -156,28 +156,8 @@ p {
   margin-right: 10px;
   fill: currentcolor;
 }
-/* .contact .link.mail::before {
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
 
-  display: inline-flex;
-  content: '';
-
-  background-image: url(../images/mail.svg);
-} */
-
-/* .contact .link.tel::before {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-
-  display: inline-flex;
-  content: '';
-  background-image: url(../images/tel.svg);
-} */
-
-/* Footer */
+/***** Footer *****/
 .page-footer {
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
@@ -192,16 +172,11 @@ p {
   margin-bottom: 20px;
 }
 .address-footer__location {
-  /* margin-bottom: 9px; */
   color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-
-// .address-footer p {
-//   margin: 0;
-// }
 
 .address-footer p:not(:last-child) {
   margin-bottom: 9px;
@@ -272,23 +247,14 @@ p {
 
   /* ******* */
 }
-.subscription {
+.page-footer__subscription {
   margin-left: 93px;
 }
-.subscription .title {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.subscription .subform {
+
+.newsletter {
   display: flex;
 }
-.subform input {
+.newsletter__email {
   padding: 16px 15px;
   width: 358px;
   height: 50px;
@@ -305,13 +271,13 @@ p {
 
   cursor: pointer;
 }
-.subform input::placeholder {
+.newsletter__email::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subform .btn {
+.newsletter__btn {
   display: flex;
   width: 200px;
   height: 50px;
@@ -332,7 +298,7 @@ p {
 
   cursor: pointer;
 }
-.subform .icon {
+.newsletter__icon {
   margin-left: 10px;
   fill: var(--primary-bg-color);
 }

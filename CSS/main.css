@@ -187,26 +187,7 @@ p {
   fill: currentcolor;
 }
 
-/* .contact .link.mail::before {
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-
-  display: inline-flex;
-  content: '';
-
-  background-image: url(../images/mail.svg);
-} */
-/* .contact .link.tel::before {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-
-  display: inline-flex;
-  content: '';
-  background-image: url(../images/tel.svg);
-} */
-/* Footer */
+/***** Footer *****/
 .page-footer {
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
@@ -227,7 +208,6 @@ p {
 }
 
 .address-footer__location {
-  /* margin-bottom: 9px; */
   color: #ffffff;
   font-style: normal;
   font-size: 14px;
@@ -311,28 +291,17 @@ p {
   /* ******* */
 }
 
-.subscription {
+.page-footer__subscription {
   margin-left: 93px;
 }
 
-.subscription .title {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.subscription .subform {
+.newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.subform input {
+.newsletter__email {
   padding: 16px 15px;
   width: 358px;
   height: 50px;
@@ -348,42 +317,42 @@ p {
   cursor: pointer;
 }
 
-.subform input::-webkit-input-placeholder {
+.newsletter__email::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subform input::-moz-placeholder {
+.newsletter__email::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subform input:-ms-input-placeholder {
+.newsletter__email:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subform input::-ms-input-placeholder {
+.newsletter__email::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subform input::placeholder {
+.newsletter__email::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subform .btn {
+.newsletter__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +376,7 @@ p {
   cursor: pointer;
 }
 
-.subform .icon {
+.newsletter__icon {
   margin-left: 10px;
   fill: var(--primary-bg-color);
 }
@@ -681,13 +650,13 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
   /* visibility: hidden; */
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.2);
           transform: translate(-50%, -50%) scale(1.2);
 }
@@ -711,7 +680,7 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .btn-close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -733,8 +702,8 @@ p {
   fill: black;
 }
 
-.modal .btn-close:hover,
-.modal .btn-close:focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   fill: var(--accent-color);
 }
 
@@ -752,7 +721,7 @@ p {
           align-items: center;
 }
 
-.data-form .title {
+.data-form__title {
   display: block;
   text-align: center;
   margin-bottom: 30px;
@@ -763,7 +732,7 @@ p {
   color: var(--secondary-color-text);
 }
 
-.form-field {
+.data-form__form-field {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,7 +746,7 @@ p {
   /* outline: 1px solid blue; */
 }
 
-.form-field > input {
+.data-form__input {
   padding: 10px 42px;
   font-size: 16px;
   line-height: 1.15;
@@ -790,15 +759,15 @@ p {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field > input:focus {
+.data-form__input:focus {
   border-color: var(--accent-color);
 }
 
-.form-field > input:focus + svg {
+.data-form__input:focus + svg {
   fill: var(--accent-color);
 }
 
-.form-field .icon {
+.data-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -809,7 +778,7 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field > label {
+.data-form__label {
   position: absolute;
   left: 42px;
   top: 50%;
@@ -825,16 +794,16 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field > input:not(:-moz-placeholder-shown) ~ label {
+.data-form__input:not(:-moz-placeholder-shown) ~ .data-form__label {
   transform: translate(-42px, -35px);
 }
 
-.form-field > input:not(:-ms-input-placeholder) ~ label {
+.data-form__input:not(:-ms-input-placeholder) ~ .data-form__label {
   transform: translate(-42px, -35px);
 }
 
-.form-field > input:focus ~ label,
-.form-field > input:not(:placeholder-shown) ~ label {
+.data-form__input:focus ~ .data-form__label,
+.data-form__input:not(:placeholder-shown) ~ .data-form__label {
   -webkit-transform: translate(-42px, -35px);
           transform: translate(-42px, -35px);
 }
