@@ -4,7 +4,7 @@
   min-width: 73px;
   padding: 6px 22px;
 
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
   background-color: #f5f4fa;
 
   font-weight: 500;
@@ -27,7 +27,7 @@
 .button:focus,
 .button:hover {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transform: translateY(-2px);
@@ -84,7 +84,7 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
+  color: $primary-bg-color;
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,7 +101,7 @@
 }
 .portfolio__title {
   margin-bottom: 4px;
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
 
   font-weight: 700;
   font-size: 18px;
@@ -110,7 +110,7 @@
 }
 .portfolio__sort {
   margin: 0px;
-  color: var(--primary-color-text);
+  color: $primary-color-text;
 
   font-size: 16px;
   line-height: 1.88;

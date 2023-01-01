@@ -14,7 +14,7 @@
     url(../images/hero.jpg);
   background-size: cover;
   background-position: center;
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
 }
 .hero__title {
   margin-bottom: 30px;
@@ -29,7 +29,7 @@
 
 .hero__button {
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 
   font-weight: 700;
   font-size: 16px;
@@ -47,7 +47,7 @@
 .section-title {
   margin-bottom: 50px;
 
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -69,7 +69,7 @@
   margin-left: 30px;
 }
 .advances-list__title {
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
 
   font-weight: 700;
   font-size: 14px;
@@ -155,7 +155,7 @@
 .team-list__item {
   width: 270px;
   height: 428px;
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -170,7 +170,7 @@
 .team-list__title {
   margin-bottom: 10px;
 
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -221,8 +221,8 @@
 
 .list-client__link:hover,
 .list-client__link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: $accent-color;
+  border-color: $accent-color;
 
   transform: scale(1.1);
 }
@@ -281,12 +281,12 @@
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   fill: black;
 }
 .modal__btn-close:hover,
 .modal__btn-close:focus {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 /* *********Send Data-form*********** */
@@ -305,7 +305,7 @@
   line-height: 1.15;
   letter-spacing: 0.03em;
 
-  color: var(--secondary-color-text);
+  color: $secondary-color-text;
 }
 .data-form__form-field {
   position: relative;
@@ -331,10 +331,10 @@
 }
 
 .data-form__input:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 .data-form__input:focus + svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .data-form__icon {
@@ -383,7 +383,7 @@
 }
 
 .data-form__coment:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 .data-form__coment:focus + .data-form__coment-label,
 .data-form__coment:not(:placeholder-shown) + .data-form__coment-label {
@@ -419,7 +419,7 @@
 }
 
 .data-form__checkbox:checked + .data-form__icon-check {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .data-form__checkbox:not(:checked) + .data-form__icon-check {
   border: 2px solid black;
@@ -442,7 +442,7 @@
   letter-spacing: 0.03em;
 }
 .data-form__resolution-link {
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 }
 
@@ -458,6 +458,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: $accent-color;
+  color: $primary-bg-color;
 }
