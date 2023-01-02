@@ -2,30 +2,32 @@
 .works {
   position: relative;
   display: flex;
-}
-.works__item:not(:last-child) {
-  margin-right: 30px;
-}
-.works__image {
-  display: block;
-}
 
-.works__title {
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &__image {
+    display: block;
+  }
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  &__title {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
 
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
