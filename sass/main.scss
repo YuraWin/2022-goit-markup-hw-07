@@ -1,7 +1,15 @@
 @import './base/normalize';
 @import './utils/variables';
 @import './base/base_settings';
-
-@import './common';
-@import './main1';
-@import './portfolio';
+@import './components/page-header';
+@import './components/logo';
+@import './components/hero';
+@import './components/advances';
+@import './components/works';
+@import './components/team';
+@import './components/clients';
+@import './components/_social-links';
+@import './components/page-footer';
+@import './components/portfolio';
+@import './components/_modal';
+@import './components/_data-form';
