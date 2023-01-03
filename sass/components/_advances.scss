@@ -5,22 +5,22 @@
 
 .advances-list {
   display: flex;
-
-  &__title {
-    color: $secondary-color-text;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  &__text {
-    margin: 0px;
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
+.advances-list__title {
+  color: $secondary-color-text;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advances-list__text {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .advances-list__item {
   width: 270px;
 
@@ -38,6 +38,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
   &.attention::before {
     background-image: url(../images/antenna1.svg);
   }

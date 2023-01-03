@@ -2,30 +2,29 @@
 
 .team-list {
   display: flex;
+}
+.team-list__foto {
+  display: block;
+}
+.team-list__props {
+  padding: 30px 32px;
+}
+.team-list__title {
+  margin-bottom: 10px;
 
-  &__foto {
-    display: block;
-  }
-  &__props {
-    padding: 30px 32px;
-  }
-  &__title {
-    margin-bottom: 10px;
+  color: $secondary-color-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
-    color: $secondary-color-text;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-  }
-
-  &__vocation {
-    margin-top: 0px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-  }
+.team-list__vocation {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .team-list__item {
